@@ -1,8 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import { useNavigate } from "react-router-dom";
 
 export default function GallerySection() {
   const [hoveredCard, setHoveredCard] = useState(null);
   const [activeImages, setActiveImages] = useState({});
+
+    const navigate = useNavigate();
 
   // Gallery data with multiple images per card
   const galleryCards = [
@@ -150,7 +153,9 @@ export default function GallerySection() {
                     </div>
                   </div>
                   <div className="p-6 bg-gradient-to-b from-zinc-900/90 to-black/90 backdrop-blur-sm rounded-b-xl border-t border-white/10">
-                    <button className="w-full group/btn relative px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:from-pink-700 hover:to-purple-700 hover:shadow-lg hover:shadow-pink-600/50 overflow-hidden rounded-lg">
+                    <button 
+                      onClick={() => navigate("/gallery")}
+                      className="w-full group/btn relative px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:from-pink-700 hover:to-purple-700 hover:shadow-lg hover:shadow-pink-600/50 overflow-hidden rounded-lg">
                       <span className="relative z-10">Show More</span>
                       <span className="absolute inset-0 bg-white/20 translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300"></span>
                     </button>
@@ -190,7 +195,9 @@ export default function GallerySection() {
                     </div>
                   </div>
                   <div className="p-6 bg-gradient-to-b from-zinc-900/90 to-black/90 backdrop-blur-sm rounded-b-xl border-t border-white/10">
-                    <button className="w-full group/btn relative px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:from-pink-700 hover:to-purple-700 hover:shadow-lg hover:shadow-pink-600/50 overflow-hidden rounded-lg">
+                    <button 
+                      onClick={() => navigate("/gallery")}
+                      className="w-full group/btn relative px-6 py-3 bg-gradient-to-r from-pink-600 to-purple-600 text-white text-sm font-bold uppercase tracking-wider transition-all duration-300 hover:from-pink-700 hover:to-purple-700 hover:shadow-lg hover:shadow-pink-600/50 overflow-hidden rounded-lg">
                       <span className="relative z-10">Show More</span>
                       <span className="absolute inset-0 bg-white/20 translate-x-full group-hover/btn:translate-x-0 transition-transform duration-300"></span>
                     </button>
@@ -209,7 +216,9 @@ export default function GallerySection() {
         </div>
 
         <div className="flex justify-center mt-16 z-0 relative">
-          <button className="relative bg-transparent border-2 border-cyan-400 text-cyan-400 font-bold text-lg px-10 py-4 rounded-md 
+          <button 
+            onClick={() => navigate("/gallery")}
+            className="relative bg-transparent border-2 border-cyan-400 text-cyan-400 font-bold text-lg px-10 py-4 rounded-md 
             hover:bg-cyan-400 hover:text-black transition-all duration-300 
             shadow-lg shadow-cyan-400/0 hover:shadow-cyan-400/40 overflow-hidden group">
             <span className="relative z-10 tracking-wide">FOR MORE ALBUM</span>
