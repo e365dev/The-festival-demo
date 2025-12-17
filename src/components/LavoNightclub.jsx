@@ -66,7 +66,7 @@ export default function LavoNightclub() {
 
             <nav className="hidden lg:block animate-fade-in">
               <ul className="flex gap-7 xl:gap-9 text-white text-[15px] font-normal">
-                {['About', 'Services', 'Events', 'Menu', 'Gallery', 'Academy', 'Blog', 'Reservations'].map((item, index) => (
+                {['About', 'Events', 'Album','Gallery','Team', 'Associate','Resources'].map((item, index) => (
                   <li key={item} className="animate-fade-in-stagger" style={{ animationDelay: `${index * 0.1}s` }}>
                     <a href={`#${item.toLowerCase()}`} className="hover:text-purple-400 transition-all duration-300 relative group hover:-translate-y-1 inline-block">
                       {item}
