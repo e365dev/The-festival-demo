@@ -100,19 +100,33 @@ export default function Footer() {
           <div className="space-y-6 animate-fade-in-right">
             <div className="grid md:grid-cols-2 gap-6">
               {/* Google Map */}
-              <div className="group relative overflow-hidden rounded-xl border border-white/10 hover:border-pink-500/50 transition-all duration-500 h-full">
-                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.1489276805654!2d88.36388931495623!3d22.57264998517315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0277b027a7e8b1%3A0xdba35e3186c5b889!2sVictoria%20Memorial!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0, minHeight: '250px' }}
-                  allowFullScreen=""
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  className="relative z-0"
-                ></iframe>
-              </div>
+             {/* Google Map – Exact Office Location */}
+<a
+  href="https://www.google.com/maps/search/?api=1&query=22.5229848,88.3685846&query_place_id=ChIJtwsSW9F2AjoRuz4oACDyM-8"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="group relative block overflow-hidden rounded-xl border border-white/10 hover:border-pink-500/50 transition-all duration-500 h-full"
+>
+  {/* Hover Overlay */}
+  <div className="absolute inset-0 bg-gradient-to-br from-pink-500/20 to-cyan-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 z-10"></div>
+
+  {/* Open Hint */}
+  <div className="absolute bottom-3 right-3 z-20 bg-black/70 backdrop-blur-md px-3 py-1 rounded-full text-xs text-white">
+    Open exact location ↗
+  </div>
+
+  {/* Embedded Map (click disabled) */}
+  <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3685.230219728587!2d88.367751!3d22.522985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0276d15b120eb7%3A0xefe32a000e2e98bb!2sE365%20India%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1702130000000"
+    width="100%"
+    height="100%"
+    style={{ border: 0, minHeight: '250px' }}
+    loading="lazy"
+    referrerPolicy="no-referrer-when-downgrade"
+    className="relative z-0 pointer-events-none"
+  />
+</a>
+
 
               {/* Contact Details */}
               <div className="bg-gradient-to-b from-slate-900/60 to-slate-950/60 backdrop-blur-xl rounded-xl border border-white/10 p-6 space-y-4 hover:border-pink-500/30 transition-all duration-500 h-full">
