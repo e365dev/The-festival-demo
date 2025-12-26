@@ -35,6 +35,7 @@ function App() {
         {/* <Route path="/investor" element={<InvestorPage />} /> */}
         <Route path="/leadership" element={<LeadershipPage />} />
         {/* <Route path="/contact" element={<ContactPage />} /> */}
+    
       </Routes>
     </BrowserRouter>
   );

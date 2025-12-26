@@ -185,28 +185,6 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="relative border-t border-white/10 bg-black/50 backdrop-blur-sm">
-        <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-3">
-            <p className="text-gray-400 text-xs">
-              © 2024 The Festival. All rights reserved.
-            </p>
-            <div className="flex gap-4 text-xs">
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
-                Privacy Policy
-              </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
-                Terms
-              </a>
-              <a href="#" className="text-gray-400 hover:text-cyan-400 transition-colors duration-300">
-                Cookies
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
       <style jsx>{`
         @keyframes gridMove {
           0% { transform: translate(0, 0); }
