@@ -7,6 +7,7 @@ import AlbumsPage from "./pages/AlbumsPage";
 import GalleryPage from "./pages/GalleryPage";
 import GalleryDetailPage from "./pages/GalleryDetailPage";
 import EventDetailPage from "./pages/EventDetailPage";
+import CreateEventPage from "./pages/CreateEventPage";
 
 /* ✅ ADD THESE (or replace later with real pages) */
 import NewsPage from "./pages/NewsPage";
@@ -22,6 +23,7 @@ function App() {
         <Route path="/aboutus" element={<ExplorePage />} />
         <Route path="/events" element={<EventsPages />} />
         <Route path="/event/card/:id" element={<EventDetailPage />} />
+         <Route path="/create-event" element={<CreateEventPage />} />
 
         {/* Gallery */}
         <Route path="/gallery" element={<GalleryPage />} />
